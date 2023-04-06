@@ -21,15 +21,15 @@ export const TodoElement: React.FC<Props> = ({
   };
 
   return (
-    <div className="flex flex-row justify-between w-[400px]">
-      <div>
+    <div className="flex flex-row justify-between w-[400px] hover:bg-cyan-100">
+      <div >
         <input
           type="checkbox"
           checked={completed}
           onChange={handleToggleTodos}
         />
 
-        <span>{title}</span>
+        <span className=" p-2 font-bold">{title}</span>
         <span>{completed}</span>
       </div>
       <div>

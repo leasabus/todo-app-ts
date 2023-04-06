@@ -17,7 +17,7 @@ export const CreateTodo: React.FC<Props> = ({ addTodo }) => {
   return (
     <div className='w-full'>
       <form onSubmit={handleAddTodo}>
-        <input type="text" placeholder='Que quieres hacer?' value={inputValue}
+        <input className='w-[300px]' type="text" placeholder='Que vas a hacer hoy?' value={inputValue}
           onChange={(evt) => setInputValue(evt.target.value)} />
       </form>
       <div>

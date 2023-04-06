@@ -10,7 +10,7 @@ interface Props {
 
 export const Todos: React.FC<Props> = ({ todos, deleteTodos, toggleTodos }) => {
   return (
-    <div className="shadow-xl w-[500px] h-auto">
+    <div className="p-4">
       {todos.map((todo) => (
         <div
           className={`${todo.completed ? "completed line-through" : " "} `}
