@@ -9,8 +9,8 @@ interface Props {
 
 export const Header: React.FC<Props> = ({ onAddTodo }) => {
   return (
-    <div className='p-4'>
-      <h1 className='font-bold text-2xl text-cyan-600'>Todo List App</h1>
+    <div className='flex flex-col items-center justify-center'>
+      <h1 className='font-bold text-2xl text-cyan-600 mb-4'>Todo List App</h1>
       <CreateTodo addTodo={onAddTodo} />
     </div>
   )
